@@ -1,0 +1,1 @@
+Student: Rashid Warda | ID: F2023332043 | Task: 3.2 | Lab: 3 | Short note: tshark FTP extraction showing plaintext USER msfadmin (frame 6) and PASS msfadmin (frame 10) credentials captured in clear text

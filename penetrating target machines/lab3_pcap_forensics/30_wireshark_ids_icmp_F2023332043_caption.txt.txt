@@ -1,0 +1,1 @@
+Student: Rashid Warda | ID: F2023332043 | Task: 3.3 | Lab: 3 | Short note: Wireshark IDS filter 'icmp && frame.len > 100' shows no results - all ICMP packets are normal size (98 bytes)
