@@ -1,0 +1,34 @@
+=== LISTENING SERVICES ===
+
+tcp    LISTEN    0    1024    0.0.0.0:8084    0.0.0.0:*    users:(("nessud",pid=962,fd=15))
+tcp    LISTEN    0    1024    [:::]:8834      [:::]:*      users:(("nessud",pid=962,fd=18))
+
+=== SERVICE STATUS ===
+
+INACTIVE: apache2
+INACTIVE: mysql
+INACTIVE: postgresql
+INACTIVE: cups
+INACTIVE: bluetooth
+INACTIVE: avahi-daemon
+=== ANALYSIS QUESTIONS ===
+
+Q1: List 3 services found running. For each: port number, protocol, service name, and potential security risk.
+
+A1: 
+- Port 8084/tcp, nessud (Nessus): Risk = If left running, Nessus listener could be discovered by attackers on the network.
+- Port 8834/tcp, nessud (Nessus Web UI): Risk = Web interface could be brute-forced or exploited if credentials are weak.
+
+Only 2 services were found running on this Kali VM.
+
+Q2: Should SSH be enabled on Kali during this quiz? Justify with one security argument for and against.
+
+A2: 
+- For: SSH allows remote access and troubleshooting if the GUI becomes unresponsive.
+- Against: SSH opens an additional port (22/tcp) that increases the attack surface and could be brute-forced.
+
+Q3: What is the principle of least privilege and how does it apply to managing running services on an attack VM?
+
+A3: The principle of least privilege means only running necessary services and giving only required permissions. On an attack VM, unnecessary services like Bluetooth, printing (cups), and Avahi should be disabled to reduce the attack surface and minimize forensic traces during penetration testing.
+
+

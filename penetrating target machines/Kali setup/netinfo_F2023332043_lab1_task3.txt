@@ -1,0 +1,15 @@
+=== NETWORK INFORMATION ===
+
+IP Address: 192.168.32.132/24
+Gateway: 192.168.32.2
+Subnet: 192.168.32.0/24
+
+=== ANALYSIS QUESTIONS ===
+
+Q1: What is the NAT subnet CIDR in use? How did you determine the subnet mask from ip addr output?
+
+A1: The NAT subnet CIDR is 192.168.32.0/24. I determined the subnet mask from the /24 notation in the ip addr show output, which indicates a subnet mask of 255.255.255.0.
+
+Q2: Explain the difference between an ARP request and an ARP reply. How does netdiscover leverage ARP for discovery?
+
+A2: An ARP request asks "Who has this IP address?" broadcast to all devices on the network. An ARP reply says "I have that IP address, here is my MAC address." Netdiscover sends ARP requests to scan for active hosts and listens for ARP replies to identify live devices on the network.
