@@ -1,0 +1,1 @@
+Student: Rashid Warda | ID: F2023332043 | Task: 2.2 | Lab: 2 | Short note: netdiscover scan showing 5 live hosts including XP (138) and Metasploitable (139)

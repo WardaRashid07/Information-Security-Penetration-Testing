@@ -1,0 +1,30 @@
+=== HOST DISCOVERY COMPARISON ===
+
+netdiscover found (5 hosts):
+- 192.168.32.1 (VMware)
+- 192.168.32.2 (VMware)
+- 192.168.32.138 (Windows XP)
+- 192.168.32.139 (Metasploitable 2)
+- 192.168.32.254 (VMware)
+
+nmap ping sweep found (6 hosts):
+- 192.168.32.1 (VMware)
+- 192.168.32.2 (VMware)
+- 192.168.32.132 (Kali)
+- 192.168.32.138 (Windows XP)
+- 192.168.32.139 (Metasploitable 2)
+- 192.168.32.254 (VMware)
+
+=== ANALYSIS QUESTIONS ===
+
+Q1: List all hosts discovered by each method. Are there discrepancies? Explain why they might occur.
+
+A1: netdiscover found 5 hosts, nmap found 6 hosts. The discrepancy is that netdiscover did not list Kali itself (192.168.32.132) because netdiscover scans for other hosts on the network, while nmap includes the scanning machine in its output.
+
+Q2: What vendor information did netdiscover provide for each target MAC? What does this reveal about the VM environment?
+
+A2: All MAC addresses showed "VMware, Inc." as the vendor. This reveals that all machines are running in a VMware virtualized environment.
+
+Q3: Which method is less detectable on a real network? Explain passive vs active discovery.
+
+A3: netdiscover uses ARP requests which are less detectable because they operate at Layer 2 and don't cross routers. Nmap ping sweep uses ICMP packets which are more easily detected by IDS/IPS systems. Active discovery sends probes, passive discovery listens without sending traffic.

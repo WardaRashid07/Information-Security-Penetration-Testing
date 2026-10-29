@@ -1,0 +1,11 @@
+# Nmap 7.98 scan initiated Mon May 18 05:11:59 2026 as: /usr/lib/nmap/nmap -Pn -sS -p- --min-rate 1000 -oN nmap_fullport_F2023332043_t2.txt 192.168.32.138
+Nmap scan report for 192.168.32.138
+Host is up (0.00029s latency).
+Not shown: 65532 closed tcp ports (reset)
+PORT    STATE SERVICE
+135/tcp open  msrpc
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+MAC Address: 00:0C:29:3E:E0:1D (VMware)
+
+# Nmap done at Mon May 18 05:12:19 2026 -- 1 IP address (1 host up) scanned in 20.46 seconds

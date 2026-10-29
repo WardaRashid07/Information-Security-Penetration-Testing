@@ -1,0 +1,1 @@
+Student: Rashid Warda | ID: F2023332043 | Task: 2.1 | Lab: 2 | Short note: VMware NAT network adapter verified for Metasploitable 2
