@@ -1,0 +1,1 @@
+Student: Rashid Warda | ID: F2023332043 | Task: 5.1 | Lab: 5 | Short note: DIG command retrieving DNS records for zonetransfer.me showing A (5.196.105.14), MX (Google mail servers), NS, TXT with Google verification, and SOA records

@@ -1,0 +1,49 @@
+=== OSINT SCAN RESULTS for zonetransfer.me ===
+=== WHOIS Information ===
+Domain Name: zonetransfer.me
+Registry Domain ID: REDACTED
+Registrar WHOIS Server: domains.meshdigital.com
+Registrar URL: http://www.domainbox.com
+Updated Date: 2024-12-03T11:40:43Z
+Creation Date: 2011-12-27T15:34:08Z
+Registry Expiry Date: 2028-12-27T15:34:08Z
+Registrar: Mesh Digital Limited
+Registrar IANA ID: 1390
+Registrar Abuse Contact Email: abuse@domainbox.com
+Registrar Abuse Contact Phone: +1.8779770099
+Domain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited
+Domain Status: clientRenewProhibited https://icann.org/epp#clientRenewProhibited
+Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+Domain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited
+Registry Registrant ID: REDACTED
+Registrant Name: REDACTED
+Registrant Organization: Domains By Proxy, LLC
+Registrant Street: REDACTED
+Registrant City: REDACTED
+Registrant State/Province: Arizona
+Registrant Postal Code: REDACTED
+Registrant Country: US
+Registrant Phone: REDACTED
+Registrant Phone Ext: REDACTED
+Registrant Fax: REDACTED
+Registrant Fax Ext: REDACTED
+Registrant Email: REDACTED
+Registry Admin ID: REDACTED
+Admin Name: REDACTED
+
+=== DNS Records (A, MX, NS, TXT) ===
+5.196.105.14
+20 ASPMX4.GOOGLEMAIL.COM.
+0 ASPMX.L.GOOGLE.COM.
+20 ASPMX3.GOOGLEMAIL.COM.
+20 ASPMX5.GOOGLEMAIL.COM.
+10 ALT2.ASPMX.L.GOOGLE.COM.
+20 ASPMX2.GOOGLEMAIL.COM.
+10 ALT1.ASPMX.L.GOOGLE.COM.
+nsztm2.digi.ninja.
+nsztm1.digi.ninja.
+"google-site-verification=tyP28J7JAUHA9fw2sHXMgcCC0I6XBmmoVi04VlMewxA"
+
+=== Certificate Transparency Subdomains ===
+www.zonetransfer.me
+zonetransfer.me

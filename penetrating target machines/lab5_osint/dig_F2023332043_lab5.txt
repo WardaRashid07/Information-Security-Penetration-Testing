@@ -1,0 +1,19 @@
+=== A ===
+zonetransfer.me.	5	IN	A	5.196.105.14
+=== MX ===
+zonetransfer.me.	5	IN	MX	10 ALT1.ASPMX.L.GOOGLE.COM.
+zonetransfer.me.	5	IN	MX	20 ASPMX3.GOOGLEMAIL.COM.
+zonetransfer.me.	5	IN	MX	10 ALT2.ASPMX.L.GOOGLE.COM.
+zonetransfer.me.	5	IN	MX	0 ASPMX.L.GOOGLE.COM.
+zonetransfer.me.	5	IN	MX	20 ASPMX2.GOOGLEMAIL.COM.
+zonetransfer.me.	5	IN	MX	20 ASPMX5.GOOGLEMAIL.COM.
+zonetransfer.me.	5	IN	MX	20 ASPMX4.GOOGLEMAIL.COM.
+=== NS ===
+zonetransfer.me.	5	IN	NS	nsztm1.digi.ninja.
+zonetransfer.me.	5	IN	NS	nsztm2.digi.ninja.
+=== TXT ===
+zonetransfer.me.	5	IN	TXT	"google-site-verification=tyP28J7JAUHA9fw2sHXMgcCC0I6XBmmoVi04VlMewxA"
+=== SOA ===
+zonetransfer.me.	5	IN	SOA	nsztm1.digi.ninja. robin.digi.ninja. 2019100801 172800 900 1209600 3600
+=== CNAME ===
+=== AAAA ===

@@ -1,0 +1,1 @@
+Student: Rashid Warda | ID: F2023332043 | Task: 5.3 | Lab: 5 | Short note: OSINT reconnaissance on zonetransfer.me showing WHOIS data with redacted registrant information, DNS A record (5.196.105.14), MX records (Google mail servers), NS records (nsztm1.digi.ninja, nsztm2.digi.ninja), TXT record with Google verification, and subdomains (www.zonetransfer.me, zonetransfer.me)
